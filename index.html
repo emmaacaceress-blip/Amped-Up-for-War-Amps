@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amped Up for War Amps</title>
+  <meta name="description" content="Amped Up for War Amps - poster site">
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;background:#0b0b0b;color:#fff}
+    .card{max-width:1000px;width:100%;box-shadow:0 10px 30px rgba(0,0,0,0.5);border-radius:8px;overflow:hidden;background:#111}
+    img{display:block;width:100%;height:auto}
+    header{padding:18px 22px;background:linear-gradient(90deg,#111,#222);text-align:center}
+    h1{margin:0;font-size:20px}
+    .note{padding:16px;color:#ddd;background:#0f0f10;font-size:14px}
+    .replace{font-weight:600;color:#7fd1ff}
+    .small{font-size:13px;opacity:0.9}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <h1>Amped Up for War Amps</h1>
+      </header>
+      <!-- Try to load the actual poster if present; otherwise the SVG placeholder will show -->
+      <picture>
+        <source srcset="images/poster.jpg" type="image/jpeg">
+        <img src="images/poster.svg" alt="Poster placeholder - upload your poster to images/poster.jpg">
+      </picture>
+      <div class="note">
+        <div class="small">How to replace the placeholder:</div>
+        <ol>
+          <li class="small">Upload your poster image to <code>images/poster.jpg</code> in this repository (or push it via Git).</li>
+          <li class="small">Supported types: .jpg, .jpeg, .png. For best results use a high-resolution poster (1200px+ wide).</li>
+          <li class="small">I added a <code>CNAME</code> for <span class="replace">ampedupforwaramps.com</span>. Make sure your domain DNS has the GitHub Pages A records (or an ALIAS/ANAME) pointing to GitHub.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
